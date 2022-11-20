@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Portfolio Website - Ashi</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/f1dd2f7f1e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- Header Section -->
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="images/logo.png" alt="" class="src" />
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>Full stack Web Developer</p>
+        <h1>
+          Hi, I'm <span>Ashi Singh</span><br />
+          Looking for a job in<br /><span>Web Development.</span>
+        </h1>
+      </div>
+    </div>
+  </div>
+  <!-- About Section -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/phone-background.png" alt="" />
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p class="about-desc">
+            A highly motivated individual who bears the belief that the
+            learning and growth processes have no limits. I have 1.5+ years of experience and currently looking for a
+            role that will help me get the best out of me.
+          </p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">
+              Skills
+            </p>
+            <p class="tab-links" onclick="opentab('experience')">
+              Experience
+            </p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li>
+                <span>Website Development</span><br />HTML/ CSS/ JavaScript/
+                React
+              </li>
+              <li>
+                <span>Database Management</span><br />MYSQL/ MongoDB/ Nodejs
+              </li>
+              <li>
+                <span>Programming Language</span><br />C Language/ C++
+                Language
+              </li>
+              <li>
+                <span>Search Engine Optimization</span><br />SEO Optimization of All types of industries
+              </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li>
+                <span>Digital Marketing Executive</span><br />WebeeSocial Pvt
+                Ltd (March,2022 - Present)
+              </li>
+              <li>
+                <span>Digital Marketing Manager</span><br />Aleph INDIA
+                (October,2021 - February,2022)
+              </li>
+              <li>
+                <span>Client Account Manager (Internship)</span><br />GetMyUni (July,2021 -
+                September,2021)
+              </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li>
+                <span>Masters of Computer Application</span><br />Lovely
+                Professional University, Punjab
+              </li>
+              <li>
+                <span>Bachelors of Commerce</span><br />Dyal Singh College,
+                University of Delhi
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Services Section -->
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-sharp fa-solid fa-code"></i>
+          <h2>Website Development</h2>
+          <p>
+          <p>I help create websites that ensure great experience for web users. I professionally design, redesign and
+            continuously support customer-facing and enterprise web apps to achieve high conversion and adoption rates.
+          </p>
+          <ul class="list-item">
+            <li>HTML/CSS</li>
+            <li>JavaScript</li>
+            <li>Wordpress</li>
+            <li>React</li>
+          </ul>
+          </p>
+
+        </div>
+        <div>
+          <i class="fa-brands fa-uikit"></i>
+          <h2>UI / UX</h2>
+          <p>
+          <p>Creating interactive UI/UX designs that cater to your diverse enterprise needs and deliver engaging user
+            experiences across devices.
+          </p>
+          <ul class="list-item">
+            <li>Landing Pages</li>
+            <li>Wireframing</li>
+            <li>Prototyping</li>
+
+          </ul>
+          </p>
+
+        </div>
+        <div>
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <h2>SEO Marketing</h2>
+          <p>
+          <p>SEO allows you to climb the search engine results page rankings by improving on-page and off-page elements
+            of your website that work together to make it more beneficial to your target audience.
+          </p>
+          <ul class="list-item">
+            <li>On-Page SEO</li>
+            <li>Off-Page SEO</li>
+            <li>Technical SEO</li>
+
+          </ul>
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Portfolio -->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Work</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="images/work-1.png" alt="" />
+          <div class="layer">
+            <h3>SQL Project</h3>
+            <p>
+              Zomato Project made using MySQL, with different queries. Analysis of various business questions.
+            </p>
+            <a href="https://github.com/ashisingh21/Zomato_SQL"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+
+        <div class="work">
+          <img src="images/work-2.png" alt="" />
+          <div class="layer">
+            <h3>Ecommerce Website</h3>
+            <p>
+              E-commerce Website that help users making transaction and buy stuff from a website.
+            </p>
+            <a><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work-3.png" alt="" />
+          <div class="layer">
+            <h3>Clone Website</h3>
+            <p>
+              Clone website of _____.
+            </p>
+            <a><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+      </div>
+      <a class="btn" href="#">See more</a>
+    </div>
+  </div>
+
+  <!-- Contact form -->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p>
+            <i class="fa-sharp fa-solid fa-paper-plane"></i>ashi888032@gmail.com
+          </p>
+          <p><i class="fa-solid fa-phone"></i>81788854374</p>
+          <div class="social-icons">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/ashi._21/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/ashi-singh21/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+          </div>
+          <a class="btn btn2" download="" href="images/my-cv.pdf">Download CV</a>
+        </div>
+        <div class="contact-right">
+          <form name='submit-to-google-sheet'>
+            <input type="text" name="Name" placeholder="Your Name" required />
+            <input type="text" name="Email" placeholder="Your Email" required />
+            <textarea name="Message" rows="06" placeholder="Your Message"></textarea>
+            <button class="btn btn2" type="submit">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright © Ashi. Made with <i class="fa-solid fa-heart"></i></p>
+    </div>
+  </div>
+  <script src="min.js"></script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbygQH6pyeC6I6PIHr_r9kNT5YG-9pGRt_Yi7jm14O3Vi9JoWX90T8OYbqNmbxxIKCVZ/exec'
+    const form = document.forms['submit-to-google-sheet']
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => {
+          msg.innerHTML = "Message sent successfully"
+          setTimeout(function () {
+            msg.innerHTML = ""
+          }, 5000)
+          form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+
+</html>
